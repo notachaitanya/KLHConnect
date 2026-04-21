@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KlhConnect</title>
+        <link rel="stylesheet" href="KlhConnect_style.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- background video -->
+         <video autoplay muted loop id="bgVideo">
+            <source src="images/bg.mp4" type="video/mp4">
+        </video>
+         <!-- /background video -->
+        <div id="logoContainer">
+        <img src="images/KLH_Logo.png" alt="KlhConnect Logo" id="loginLogo">
+        <p id="Connect">Connect</p>
+        </div>
+        <h1 id="login">Login</h1>
+        <form id="loginForm">
+            <div id="loginbSpacer">
+            <input type="text" id="username" name="username" placeholder="Roll number" class="form-input" required>
+            <input type="password" id="password" name="password" placeholder="Password" class="form-input" required>
+            <div id="buttonsArranger">
+            <button type="submit" id="loginButton">Login</button>
+            <button id="signup" onClick="window.location.href='signup.html'">Sign Up</button>
+            </div>
+            <p id="PasswordChange">Forgot Password? <a href="forgot_password.html">Click here</a></p>
+            </div>
+        </form>
+    </body>
+</html>

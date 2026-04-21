@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="KlhConnect_style.css">
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="images/bg.mp4" type="video/mp4">
+    </video>
+    <div id="blurContainer">
+        <h1 id="signuptitle">Sign Up</h1>
+        <form id="signupForm">
+            <input type="text" id="rollnumber" name="rollnumber" placeholder="Roll number" class="Signup-input" required>
+            <input type="password" id="newPassword" name="newPassword" placeholder="Password" class="Signup-input" required>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" class="Signup-input" required>
+            <select id="roleSelect" class="dropBox">
+                <option value="student" class="dropBox">Student</option>
+                <option value="admin" class="dropBox">Admin</option>
+            </select>
+            <input type="text" id="adminKeyInput" placeholder="Admin key" class="Signup-input" style="display:none;">
+
+            <button type="submit" id="signupButton">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
