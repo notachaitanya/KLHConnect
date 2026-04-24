@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KlConnect</title>
+        <link rel="stylesheet" href="KlhConnect_style.css">
+    </head>
+    <body id="uploadBody">
+    <div id="template">
+        <div id="left">
+
+            <div id="UploadingAs">
+                <h1 id="uplaodingash1">Uploading As :</h1>
+                <p id="usernameInUpload">asdfghjkl;</p>
+            </div>
+
+            <div class="upload">
+                <label>Announcement</label>
+                <textarea id="message" rows="9" cols="3" placeholder="Type your announcement here.."></textarea>
+            </div>
+
+            <div class="upload">
+                <label id="uploadSpaceLable">Attach image/file (optional)</label>
+                <div id="uploadSpace">
+                    <p>Click to select files</p>
+                    <input type="file" accept="image/*,.pdf" multiple>
+                </div>
+            </div>
+
+            <div id="uploadSubmit">
+                <button id="postButton">Post</button>
+                <button id="discardButton">Discard</button>
+            </div>
+
+            
+        </div>
+
+        <div id="right">
+            <div id="categorySpace">
+                <label>Category</label>
+                <div id="categorySelector">
+                    <div id="announcement" class="uploadOptions">ANNOUNCEMENT</div>
+                    <div id="event" class="uploadOptions">EVENT</div>
+                    <div id="holiday" class="uploadOptions">HOLIDAY</div>
+                    <div id="exam" class="uploadOptions">EXAM</div>
+                </div>
+            </div>
+
+            <div id="TargetDepartmentSelector">
+                <label>Target Department</label>
+                <div id="targetDepOptions">
+                    <label class="targetDepLabel">
+                    <input type="checkbox" name="department" value="cse">CSE
+                    </label>
+                    <label class="targetDepLabel">
+                    <input type="checkbox" name="department" value="csit">CSIT
+                    </label>
+                    <label class="targetDepLabel">
+                    <input type="checkbox" name="department" value="ece">ECE
+                    </label>
+                    <label class="targetDepLabel">
+                    <input type="checkbox" name="department" value="aids">AI/DS
+                    </label>
+                </div>
+            </div>
+
+            <div id="TargetYearSelector">
+                <label>Target Year</label>
+                <div id="targetYearOptions">
+                    <label class="targetYearLabel">
+                    <input type="checkbox" name="year" value="5">ALL
+                    </label>
+                    <label class="targetYearLabel">
+                    <input type="checkbox" name="year" value="1">1st year
+                    </label>
+                    <label class="targetYearLabel">
+                    <input type="checkbox" name="year" value="2">2nd year
+                    </label>
+                    <label class="targetYearLabel">
+                    <input type="checkbox" name="year" value="3">3rd year
+                    </label>
+                    <label class="targetYearLabel">
+                    <input type="checkbox" name="year" value="4">4th year
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="upload.js"></script>
+    </body>
+
+</html>

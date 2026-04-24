@@ -14,14 +14,54 @@
             <input type="text" id="rollnumber" name="rollnumber" placeholder="Roll number" class="Signup-input" required>
             <input type="password" id="newPassword" name="newPassword" placeholder="Password" class="Signup-input" required>
             <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" class="Signup-input" required>
-            <select id="roleSelect" class="dropBox">
-                <option value="student" class="dropBox">Student</option>
-                <option value="admin" class="dropBox">Admin</option>
-            </select>
-            <input type="text" id="adminKeyInput" placeholder="Admin key" class="Signup-input" style="display:none;">
+
+            <div id="signUpOptions">
+                <div class="signupOptionsArranger">
+                    <label>ROLE:</label>
+                    <select id="roleSelect" class="dropBox">
+                        <option value="student" class="dropBox">Student</option>
+                        <option value="admin" class="dropBox">Admin</option>
+                    </select>
+                </div>
+                
+                <div class="signupOptionsArranger">
+                    <label>YEAR:</label>
+                    <select id="YearSelect" class="dropBox">
+                        <option value="1" class="dropBox">1</option>
+                        <option value="2" class="dropBox">2</option>
+                        <option value="3" class="dropBox">3</option>
+                        <option value="4" class="dropBox">4</option>
+                    </select>
+                </div>
+
+                <div class="signupOptionsArranger">
+                    <label>COURSE:</label>
+                    <select id="course" class="dropBox">
+                        <option value="cse" class="dropBox">CSE</option>
+                        <option value="aids" class="dropBox">AI/DS</option>
+                        <option value="csit" class="dropBox">CSIT</option>
+                        <option value="ece" class="dropBox">ECE</option>
+                    </select>
+                </div>
+            </div>
+            <input type="text" id="adminKeyInput" placeholder="Admin key" class="Signup-input">
 
             <button type="submit" id="signupButton">Sign Up</button>
         </form>
     </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="signup.js"></script>
+
+
 </body>
 </html>

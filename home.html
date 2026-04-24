@@ -7,32 +7,23 @@
 <body id="homeBody">
     <header>
         <img id="headerLogo" src="images/KLH_Logo.png" alt="KlhConnect Logo">
-        <p id="userNameDisplay">qwerty</p>
+        <p id="userNameDisplay">Loading...</p>
     </header>
     <div id="nav">
-        <button class="navButton" id="all" onclick="">All</button>
-        <button class="navButton" id="Events" onclick="">Events</button>
-        <button class="navButton" id="Exams" onclick="">Exams</button>
-        <button class="navButton" id="CSE" onclick="">CSE</button>
-        <button class="navButton" id="ECE" onclick="">ECE</button>
-        <button class="navButton" id="aids" onclick="">AI/DS</button>
+        <button class="navButton" id="all" onclick="loadPosts('all')">All</button>
+        <button class="navButton" id="announcements" onclick="loadPosts('announcement')">Announcement</button>
+        <button class="navButton" id="Events" onclick="loadPosts('event')">Events</button>
+        <button class="navButton" id="Exams" onclick="loadPosts('exam')">Exams</button>
+        <button class="navButton" id="Holidays" onclick="loadPosts('holiday')">Holidays</button>
     </div>
-    
-    <div id="msgSpace">
-        <div id="SendMessageButton">+</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam amet soluta, exercitationem dolore optio fuga iusto earum. Quas unde minus sed laboriosam rem, esse eos fugiat sequi totam porro?</p>
-    </div>
+
+    <div id="msgSpace"></div>
+
+    <!-- moved outside msgSpace -->
+    <button id="SendMessageButton" onclick="window.location.href='UploadPage.html'">+</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
